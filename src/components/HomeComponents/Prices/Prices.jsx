@@ -10,7 +10,7 @@ const Prices = () => {
   return (
     <div className='Prices'>
         <div className="Prices_img">
-            <img src="/public/images/Headerimg.png" alt="" />
+            <img src="../images/Headerimg.png" alt="" />
         </div>
         <div className="Prices_text">
             <h2>Videodarslar narxi</h2>

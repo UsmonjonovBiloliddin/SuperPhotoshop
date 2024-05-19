@@ -21,7 +21,7 @@ const Usage = () => {
             </ul>
         </div>
         <div className="Usage_img">
-            <img src="/public/images/Usage.png" alt="" />
+            <img src="..images/Usage.png" alt="" />
         </div>
     </div>
   )

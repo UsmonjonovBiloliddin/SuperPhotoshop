@@ -5,7 +5,7 @@ const Mavzular = () => {
     <div className="Topics">
       <div className="Topics_top">
         <div className="Topics_img">
-          <img src="/public/images/Mavzular.png" alt="" />
+          <img src="../images/Mavzular.png" alt="" />
         </div>
         <div className="Topics_text">
           <h1>“Super Photoshop” mavzulari</h1>
@@ -18,7 +18,7 @@ const Mavzular = () => {
             <p>Photoshop dasturini 0 dan boshlab, barcha uskunalari, filtrlar o’rnatish va ishlash jarayonidagi layfhaklar o‘rgatiladi </p>
           </div>
           <div className="img">
-            <img src="/public/images/01-icon.png" alt="" />
+            <img src="../images/01-icon.png" alt="" />
           </div>
         </div>
         <div className="Topics_box">
@@ -27,7 +27,7 @@ const Mavzular = () => {
             <p>Ushbu bo‘limda vizitka, flayer, banner va boshqa chop qilinuvchi dizaynlarni tayyorlashni o‘rganasiz</p>
           </div>
           <div className="img">
-            <img src="/public/images/02-icon.png" alt="" />
+            <img src="../images/02-icon.png" alt="" />
           </div>
         </div>
         <div className="Topics_box">
@@ -36,7 +36,7 @@ const Mavzular = () => {
             <p>Hozirgi kunda trendga aylangan dizaynlar va effektlarni tayyorlashni o‘rganasiz</p>
           </div>
           <div className="img">
-            <img src="/public/images/03-icon.png" alt="" />
+            <img src="../images/03-icon.png" alt="" />
           </div>
         </div>
         <div className="Topics_box">
@@ -45,7 +45,7 @@ const Mavzular = () => {
             <p>Ushbu bo‘limda bir necha rasm resurslardan foydalangan xolda ajoyib kollaj, manupulyatsiyalar o’rgatiladi</p>
           </div>
           <div className="img">
-            <img src="/public/images/04-icon.png" alt="" />
+            <img src="../images/04-icon.png" alt="" />
           </div>
         </div>
         <div className="Topics_box">
@@ -54,7 +54,7 @@ const Mavzular = () => {
             <p>Instagram, facebook, telegram, youtube va boshqa ijtimoiy tarmoqlar uchun dizaynlar tayyorlashlar o’rgatilgan </p>
           </div>
           <div className="img">
-            <img src="/public/images/05-icon.png" alt="" />
+            <img src="../images/05-icon.png" alt="" />
           </div>
         </div>
         <div className="Topics_box">
@@ -63,7 +63,7 @@ const Mavzular = () => {
             <p>Rasmlarni retush qilish, ranglarni korreksiya qilish, filtrlar bilan ishlash va boshqa usullar o’rgatilgan </p>
           </div>
           <div className="img">
-            <img src="/public/images/06-icon.png" alt="" />
+            <img src="../images/06-icon.png" alt="" />
           </div>
         </div>
         <div className="Topics_box">
@@ -72,7 +72,7 @@ const Mavzular = () => {
             <p>Ushbu bo’limda siz tayyorlagan dizaynlaringizni mijozga chiroyli qilib taqdimoq qilish o’rgatiladi</p>
           </div>
           <div className="img">
-            <img src="/public/images/07-icon.png" alt="" />
+            <img src="../images/07-icon.png" alt="" />
           </div>
         </div>
         <div className="Topics_box">
@@ -81,7 +81,7 @@ const Mavzular = () => {
             <p>Qanday qilib portfolio tayyorlash va Envato marketpleysiyda tayyorlagan dizaynlarni sotish o‘rgatiladi</p>
           </div>
           <div className="img">
-            <img src="/public/images/08-icon.png" alt="" />
+            <img src="../images/08-icon.png" alt="" />
           </div>
         </div>
       </div>

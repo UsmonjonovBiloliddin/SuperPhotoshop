@@ -11,7 +11,7 @@ const Bonus = () => {
     <div className="Bonus">
       <div className="Bonus_top">
         <div className="Bonus_img">
-          <img src="/public/images/Bonus_top.png" alt="" />
+          <img src="../images/Bonus_top.png" alt="" />
         </div>
         <div className="Bonus_text">
           <h2>
@@ -21,7 +21,7 @@ const Bonus = () => {
       </div>
       <div className="Bonus_block">
         <div className="Bonus_block_img">
-          <img src="/public/images/Bonus.png" alt="" />
+          <img src="../images/Bonus.png" alt="" />
         </div>
         <div className="Bonus_block_text">
           <h2>Ushbu darslikda:</h2>

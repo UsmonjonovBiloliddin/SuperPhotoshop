@@ -35,7 +35,7 @@ const AutherAbout = () => {
         </div>
       </div>
       <div className="AutherAbout_img">
-        <img src="/public/images/About.png" alt="" />
+        <img src="../images/About.png" alt="" />
       </div>
     </div>
   );

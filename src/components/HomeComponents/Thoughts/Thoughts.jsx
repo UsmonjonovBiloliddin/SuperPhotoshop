@@ -11,7 +11,7 @@ const Thoughts = () => {
         <div className="Thoughts_boxes">
           <div className="Thoughts_box">
             <div className="img">
-              <img src="/public/images/Ellipse 7.png" alt="" />
+              <img src="../images/Ellipse 7.png" alt="" />
             </div>
             <div className="thoughts">
               <p>
@@ -25,7 +25,7 @@ const Thoughts = () => {
           </div>
           <div className="Thoughts_box">
             <div className="img">
-              <img src="/public/images/Ellipse 72.png" alt="" />
+              <img src="../images/Ellipse 72.png" alt="" />
             </div>
             <div className="thoughts">
               <p>
@@ -39,7 +39,7 @@ const Thoughts = () => {
           </div>
           <div className="Thoughts_box">
             <div className="img">
-              <img src="/public/images/Ellipse 7 (1).png" alt="" />
+              <img src="../images/Ellipse 7 (1).png" alt="" />
             </div>
             <div className="thoughts">
               <p>
@@ -51,7 +51,7 @@ const Thoughts = () => {
           </div>
           <div className="Thoughts_box">
             <div className="img">
-              <img src="/public/images/04-testi-icon-avatar.png" alt="" />
+              <img src="../images/04-testi-icon-avatar.png" alt="" />
             </div>
             <div className="thoughts">
               <p>
@@ -64,7 +64,7 @@ const Thoughts = () => {
           </div>
           <div className="Thoughts_box">
             <div className="img">
-              <img src="/public/images/04-testi-icon-avatar.png" alt="" />
+              <img src="../images/04-testi-icon-avatar.png" alt="" />
             </div>
             <div className="thoughts">
               <p>
@@ -76,7 +76,7 @@ const Thoughts = () => {
           </div>
           <div className="Thoughts_box">
             <div className="img">
-              <img src="/public/images/04-testi-icon-avatar.png" alt="" />
+              <img src="../images/04-testi-icon-avatar.png" alt="" />
             </div>
             <div className="thoughts">
               <p>
