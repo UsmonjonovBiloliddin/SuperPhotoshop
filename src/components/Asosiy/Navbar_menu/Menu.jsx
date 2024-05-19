@@ -17,7 +17,7 @@ const Menu = ({  openBars}) => {
       <div className={openBars ? "open active" : "open"}>
         <div className="close">
           <div className="img">
-            <img src="/public/images/Logo.png" alt="" />
+            <img src="../images/Logo.png" alt="" />
           </div>
           <h3>Super Photoshop</h3>
           <div className="radio">

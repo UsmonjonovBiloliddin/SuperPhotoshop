@@ -34,7 +34,7 @@ const Thoughts_media = () => {
           <SwiperSlide>
             <div className="Thoughts_box">
               <div className="img">
-                <img src="/public/images/Ellipse 7.png" alt="" />
+                <img src="../images/Ellipse 7.png" alt="" />
               </div>
               <div className="thoughts">
                 <p>
@@ -50,7 +50,7 @@ const Thoughts_media = () => {
           <SwiperSlide>
             <div className="Thoughts_box">
               <div className="img">
-                <img src="/public/images/Ellipse 7.png" alt="" />
+                <img src="../images/Ellipse 7.png" alt="" />
               </div>
               <div className="thoughts">
                 <p>
@@ -66,7 +66,7 @@ const Thoughts_media = () => {
           <SwiperSlide>
             <div className="Thoughts_box">
               <div className="img">
-                <img src="/public/images/Ellipse 7.png" alt="" />
+                <img src="../images/Ellipse 7.png" alt="" />
               </div>
               <div className="thoughts">
                 <p>
@@ -82,7 +82,7 @@ const Thoughts_media = () => {
           <SwiperSlide>
             <div className="Thoughts_box">
               <div className="img">
-                <img src="/public/images/Ellipse 7.png" alt="" />
+                <img src="../images/Ellipse 7.png" alt="" />
               </div>
               <div className="thoughts">
                 <p>

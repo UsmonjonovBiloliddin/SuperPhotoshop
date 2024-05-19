@@ -24,7 +24,7 @@ const AutherAbout = () => {
         </p>
         <div className="theGoal">
           <div className="theGoal_img">
-            <img src="/public/images/headerMe 7.png" alt="" />
+            <img src="../images/headerMe 7.png" alt="" />
           </div>
           <div className="theGoal_Text">
             <i>

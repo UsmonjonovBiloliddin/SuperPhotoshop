@@ -15,7 +15,7 @@ const Navbar = () => {
        <Link to={"/"}>
        <div className="left">
             <div className="img">
-                <img src="/public/images/Logo.png" alt="" />
+                <img src="../images/Logo.png" alt="" />
             </div>
             <h3>Super Photoshop</h3>
         </div></Link>

@@ -61,7 +61,7 @@ const SignUp = () => {
         ) : (
           <div className="Success">
             <div className="img">
-              <img src="/public/images/.png" alt="" />
+              <img src="../images/.png" alt="" />
             </div>
             <h4>
               Ro‘yhatdan o‘tganingiz uchun rahmat! Tez orada operatorimiz siz
