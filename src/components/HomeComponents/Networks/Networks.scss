@@ -1,0 +1,68 @@
+@use "../../Verible/Verible.scss" as *;
+
+.Networks {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  .Networks_text {
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    color: $text;
+    font-weight: 700;
+  }
+  .Networks_All {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .bir {
+      padding: 18px 36px;
+      background-color: $white;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-radius: 40px;
+      font-size: 18px;
+      color: $text;
+      margin-top: 15px;
+      cursor: pointer;
+      &:hover {
+        background-color: #ff003d;
+        color: white;
+        svg {
+          color: white;
+        }
+      }
+      &:active {
+        background-color: #d60000;
+      }
+      svg {
+        color: red;
+      }
+    }
+    .ikki {
+      @extend .bir;
+      svg {
+        color: $main;
+      }
+      &:hover {
+        @include hover;
+      }
+    }
+  }
+}
+@media screen and (0px < width < 1200px) {
+  .Networks {
+    width: 90%;
+    .Networks_All {
+      flex-wrap: wrap;
+      justify-content: center;
+      .bir {
+        padding: 18px 20px;
+        margin: 10px;
+      }
+    }
+  }
+}

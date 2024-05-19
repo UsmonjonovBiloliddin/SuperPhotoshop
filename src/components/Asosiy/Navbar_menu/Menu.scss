@@ -1,0 +1,122 @@
+@use "../../Verible/Verible.scss" as *;
+.Menu {
+  width: 80%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: all .3s linear;
+  z-index: 2;
+  &.active{
+    right: 0;
+  }
+  
+  
+  .open {
+    width: 100%;
+    height: 100%;
+    background-color: $second;
+    padding: 30px 10px;
+    position: absolute;
+
+    .close {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $white;
+      border-radius: 50px;
+      padding: 3px;
+      .radio {
+        padding: 7px;
+        font-size: 20px;
+        @include center;
+        border-radius: 50%;
+        background-color: $main;
+        color: $white;
+        @include hover;
+      }
+    }
+    .categorys {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 15px;
+
+      .category {
+        width: 100%;
+        padding: 15px 20px;
+        background-color: $white;
+        border-top: 1px solid $second;
+        font-weight: 500;
+        color: $text-second;
+        display: flex;
+        justify-content: space-between;
+        @include hover;
+      }
+    }
+    button {
+      width: 100%;
+      padding: 15px 20px;
+      @include center;
+      gap: 10px;
+      color: $white;
+      background-color: $main;
+      border: none;
+      border-radius: 50px;
+      margin: 20px 0px;
+
+      @include hover
+    }
+    .contact {
+      width: 100%;
+      height: auto;
+      padding: 8px;
+      font-size: 12px;
+      text-align: center;
+      color: $text;
+      font-weight: 700;
+      background-color: $white;
+      border-radius: 10px;
+      margin-top: 30px;
+      
+      .green{
+        background-color: $green;
+        margin-top: 20px;
+      }
+      button {
+        @extend button;
+        margin: 5px 0px;
+      }
+    }
+  }
+}
+
+@media screen and (447px < width < 600px) {
+  .Menu {
+    .open {
+      width: 70%;
+    
+    }
+  }
+}
+
+@media screen and (600px < width < 830px) {
+    .Menu {
+      .open {
+        width: 60%;
+        
+        button{
+            width: 300px;
+            margin: 15px auto;
+        }
+        .contact{
+            button {
+                @extend button;
+                margin: 5px auto;
+              }
+        }
+      }
+    }
+  }

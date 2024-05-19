@@ -1,0 +1,13 @@
+.App {
+  max-width: 1550px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #f5f5f7;
+}
+
+@media screen and (max-width: 900px) {
+  .App {
+    padding: 30px 0px;
+  }
+}
+

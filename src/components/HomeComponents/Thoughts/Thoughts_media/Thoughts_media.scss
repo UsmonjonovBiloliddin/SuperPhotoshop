@@ -1,0 +1,29 @@
+.Thoughts_media {
+  margin-bottom: 100px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  flex-wrap: wrap;
+
+  .Thoughts_box {
+    .thoughts {
+      h4 {
+        margin: 10px 0px;
+      }
+    }
+  }
+}
+.header_swiper_pagination {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  .swiper-pagination-bullet {
+    background-color: #464646;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #0071E3;
+  }
+}

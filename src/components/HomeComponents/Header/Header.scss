@@ -1,0 +1,232 @@
+@use "../../Verible/Verible.scss" as *;
+
+.Home_Header {
+  width: 75%;
+  height: 550px;
+  margin: 20px auto;
+  background-color: $white;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.09);
+  .text {
+    padding: 0px 0px 0px 50px;
+    width: 50%;
+    h1 {
+      font-size: 38px;
+      color: $text;
+    }
+    p {
+      width: 80%;
+      padding: 10px 0px;
+      color: $text-second;
+    }
+    .about {
+      width: auto;
+      height: auto;
+      display: flex;
+      gap: 10px;
+      font-weight: 600;
+      color: $text-second;
+      .radio {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    button {
+      @include btnStyle;
+      padding: 12px 18px;
+      gap: 10px;
+      font-size: 16px;
+      margin: 15px 0px;
+      font-weight: 500;
+      cursor: pointer;
+      @include hover;
+
+      span:before{
+        content: "Ro’yhatdan o‘ting ";
+       }
+    }
+  }
+  .imeg {
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (0 < width <600px) {
+  .Home_Header {
+    width: 90%;
+    height: auto;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    
+    .text {
+      width: 100%;
+      padding: 20px 15px;
+      text-align: center;
+      @include center;
+      flex-wrap: wrap;
+      h1 {
+        font-size: 20px;
+      }
+      p {
+        width: 100%;
+        font-size: 13px;
+      }
+      .about {
+        margin: 10px 50px;
+        align-items: center;
+        .radio {
+          width: 80px;
+          height: 50px;
+        }
+      }
+      button {
+        font-size: 12px;
+        padding: 11px 25px;
+        margin: 0px 20px;
+       span:before{
+        content: "";
+       }
+       
+      }
+    }
+    .imeg {
+      width: 90%;
+      padding: 15px 0px;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (600px < width < 743px) {
+  .Home_Header {
+    width: 90%;
+    height: auto;
+    .text {
+      width: 49%;
+      text-align: center;
+      padding: 0px 12px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      h1 {
+        font-size: 13px;
+      }
+      p {
+        width: 100%;
+        font-size: 12px;
+      }
+      .about {
+        align-items: center;
+        width: 130px;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+        .radio {
+          width: 30px;
+          height: 22px;
+        }
+      }
+      button {
+        font-size: 12px;
+        padding: 11px 25px;
+       span:before{
+        content: "";
+       }
+       
+      }
+    }
+    .imeg {
+      width: 49%;
+      padding: 15px 0px;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (743px < width < 1300px) {
+  .Home_Header {
+    width: 90%;
+    height: auto;
+    .text {
+      width: 49%;
+      padding: 0px 40px;
+      h1 {
+        font-size: 20px;
+      }
+      p {
+        width: 100%;
+        font-size: 14px;
+      }
+      .about {
+        .radio {
+          width: 40px;
+          height:36px;
+        }
+      }
+      button {
+        font-size: 13px;
+        padding: 11px 25px;
+       span:before{
+        content: "";
+       }
+       
+      }
+    }
+    .imeg {
+      width: 49%;
+      padding: 15px 0px;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (1300px < width < 1455px) {
+  .Home_Header {
+    width: 90%;
+    height: auto;
+    .text {
+      width: 49%;
+      padding: 0px 40px;
+      h1 {
+        font-size: 25px;
+      }
+      p {
+        width: 100%;
+        font-size: 18px;
+      }
+      .about {
+        margin: 10px 0px;
+        .radio {
+          width: 50px;
+          height:46px;
+        }
+      }
+      button {
+        font-size: 16px;
+        padding: 13px 28px;
+       span:before{
+        content: "";
+       }
+       
+      }
+    }
+    .imeg {
+      width: 49%;
+      padding: 15px 0px;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}

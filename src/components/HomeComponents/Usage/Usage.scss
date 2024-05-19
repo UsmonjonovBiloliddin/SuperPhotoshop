@@ -1,0 +1,105 @@
+@use "../../Verible/Verible.scss" as *;
+
+.Usage {
+  width: 70%;
+  margin: 20px auto;
+  display: flex;
+  gap: 20px;
+  background-color: $white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.227);
+  .Usage_text {
+    width: 49%;
+    h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: $text;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 20px;
+      padding: 0px 30px;
+      li {
+        list-style-type: disc;
+        color: $text-second;
+      }
+    }
+  }
+  .Usage_img {
+    width: 49%;
+  }
+}
+
+@media screen and (0px < width < 700px) {
+  .Usage {
+    width: 90%;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.271);
+    .Usage_text {
+      width: 100%;
+      h2 {
+        font-size: 18px;
+        text-align: center;
+      }
+      ul {
+        padding: 0px 20px;
+      }
+    }
+    .Usage_img {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (700px < width < 1000px) {
+  .Usage {
+    width: 90%;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.271);
+    .Usage_text {
+      width: 100%;
+      h2 {
+        font-size: 22px;
+        text-align: center;
+      }
+      ul {
+        padding: 0px 20px;
+      }
+      li {
+        font-size: 20px;
+      }
+    }
+    .Usage_img {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (1000px < width <1400px) {
+  .Usage {
+    width: 90%;
+
+    .Usage_img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

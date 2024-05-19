@@ -1,0 +1,206 @@
+@use "../../Verible/Verible.scss" as *;
+
+.Bonus {
+  width: 70%;
+  margin: 50px auto;
+ 
+  .Bonus_top {
+    width: 100%;
+    margin-bottom: 20px;
+    .Bonus_img {
+      width: 100%;
+      @include center;
+    }
+    .Bonus_text {
+      width: 100%;
+      @include center;
+
+      span {
+        color: $green;
+      }
+    }
+  }
+  .Bonus_block {
+    display: flex;
+    gap: 30px;
+    background-color: $white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.37);
+    .Bonus_block_text {
+      width: 49%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: $text;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 20px;
+        padding: 0px 30px;
+        li {
+          list-style-type: disc;
+          color: $text-second;
+        }
+      }
+      ol {
+        @extend ul;
+        li {
+          list-style-type: space-counter;
+        }
+      }
+    }
+    .Bonus_block_img {
+      width: 43%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .btn {
+    width: 100%;
+    margin: 40px 0px;
+    @include center;
+
+    button {
+      cursor: pointer;
+      @include btnStyle;
+      padding: 10px 20px;
+      gap: 20px;
+      span:after {
+        content: " va bepul darsni sinab ko‘ring ";
+      }
+      @include hover;
+    }
+  }
+}
+
+@media screen and (0px < width <700px) {
+  .Bonus {
+    width: 90%;
+    .Bonus_top {
+      .Bonus_img {
+        img {
+          width: 60%;
+        }
+      }
+      .Bonus_text {
+        text-align: center;
+      }
+    }
+    .Bonus_block {
+      flex-wrap: wrap;
+      padding: 15px;
+      box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.271);
+      .Bonus_block_text {
+        width: 100%;
+        h2 {
+          font-size: 18px;
+          text-align: center;
+        }
+        ul {
+          padding: 0px 20px;
+        }
+      }
+      .Bonus_block_img {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .btn {
+      button {
+        width: 100%;
+        justify-content: center;
+        font-size: 17px;
+        span:after {
+          content: "";
+        }
+      }
+    }
+  }
+}
+@media screen and (700px < width <1000px) {
+  .Bonus {
+    width: 90%;
+    .Bonus_top {
+      .Bonus_img {
+        img {
+          width: 50%;
+        }
+      }
+      .Bonus_text {
+        text-align: center;
+      }
+    }
+    .Bonus_block {
+      flex-wrap: wrap;
+      padding: 15px;
+      box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.271);
+      .Bonus_block_text {
+        width: 100%;
+        h2 {
+          font-size: 22px;
+          text-align: center;
+        }
+        ul {
+          padding: 0px 20px;
+        }
+        li {
+          font-size: 20px;
+        }
+      }
+      .Bonus_block_img {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .btn{
+        button{
+            width: 400px;
+            justify-content: center;
+            font-size: 17px;
+            span:after{
+                content: "";
+            }
+        }
+      }
+  }
+}
+@media screen and (1000px < width <1400px) {
+  .Bonus {
+    width: 90%;
+    .Bonus_top {
+      .Bonus_img {
+        img {
+          width: 40%;
+        }
+      }
+      .Bonus_text {
+        text-align: center;
+      }
+    }
+    .Bonus_block {
+      align-items: center;
+      .Bonus_block_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
