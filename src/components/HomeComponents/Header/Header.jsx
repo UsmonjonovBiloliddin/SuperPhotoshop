@@ -27,7 +27,7 @@ const Header = () => {
         </button>
       </div>
       <div className="imeg">
-        <img src="/public/images/Headerimg.png" alt="" />
+        <img src="../public/images/Headerimg.png" alt="" />
       </div>
     </div>
   );
