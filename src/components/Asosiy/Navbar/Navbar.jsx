@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { FaBars } from "react-icons/fa6";
 import "./Navbar.scss"
 import { Navbar_Menu } from '../../..';
@@ -12,12 +12,13 @@ const Navbar = () => {
     }
   return (
     <div className='Navbar'>
-        <div className="left">
+       <Link to={"/"}>
+       <div className="left">
             <div className="img">
                 <img src="/public/images/Logo.png" alt="" />
             </div>
             <h3>Super Photoshop</h3>
-        </div>
+        </div></Link>
         <div className="right">
             <ul>
                 <li><NavLink to={"/"}>Mavzular</NavLink></li>

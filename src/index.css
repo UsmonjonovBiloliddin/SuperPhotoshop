@@ -6,5 +6,6 @@
   text-decoration: none;
   list-style: none;
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth !important;
 
 }

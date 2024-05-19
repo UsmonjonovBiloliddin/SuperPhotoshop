@@ -92,31 +92,3 @@
     }
   }
 }
-
-@media screen and (447px < width < 600px) {
-  .Menu {
-    .open {
-      width: 70%;
-    
-    }
-  }
-}
-
-@media screen and (600px < width < 830px) {
-    .Menu {
-      .open {
-        width: 60%;
-        
-        button{
-            width: 300px;
-            margin: 15px auto;
-        }
-        .contact{
-            button {
-                @extend button;
-                margin: 5px auto;
-              }
-        }
-      }
-    }
-  }

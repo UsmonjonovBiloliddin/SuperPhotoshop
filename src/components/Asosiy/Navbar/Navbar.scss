@@ -13,6 +13,7 @@
     @include center;
     gap: 10px;
     cursor: pointer;
+    color: $text;
     .img {
       @include center;
       border-radius: 50%;

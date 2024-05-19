@@ -1,9 +1,10 @@
 import React from "react";
 import "./AutherAbout.scss";
 import { Link } from "react-router-dom";
+import 'animate.css';
 const AutherAbout = () => {
   return (
-    <div className="Autherabout">
+    <div className="Autherabout animate__animated animate__fadeInUp">
       <div className="AutherAbout_text">
         <h3>Muallif haqida</h3>
         <p>

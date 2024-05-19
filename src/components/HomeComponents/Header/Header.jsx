@@ -18,7 +18,7 @@ const Header = () => {
         </p>
         <div className="about">
           <div className="radio">
-            <img src="/public/images/headerMe 7.png" alt="" />
+            <img src="../images/headerMe 7.png" alt="" />
           </div>
           <p>Sardor Qodirov</p>
         </div>
@@ -27,7 +27,7 @@ const Header = () => {
         </button>
       </div>
       <div className="imeg">
-        <img src="../public/images/Headerimg.png" alt="" />
+        <img src="/images/Headerimg.png" alt="" />
       </div>
     </div>
   );
