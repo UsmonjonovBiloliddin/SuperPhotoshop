@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./AutherAbout.scss";
 import { Link } from "react-router-dom";
-import 'animate.css';
+import Aos from "aos";
+import 'aos/dist/aos.css'
+
 const AutherAbout = () => {
+  useEffect(() =>{
+    Aos.init()
+  },[])
+  
   return (
-    <div className="Autherabout animate__animated animate__fadeInUp">
+    <div className="Autherabout" data-aos="fade-up">
       <div className="AutherAbout_text">
         <h3>Muallif haqida</h3>
         <p>

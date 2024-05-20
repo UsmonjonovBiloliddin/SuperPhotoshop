@@ -2,5 +2,10 @@
 
 .Home{
     background-color: $second;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+}
+@media screen and (0px < width < 900px) {
+    .Home{
+        padding-bottom: 0px;
+    }
 }

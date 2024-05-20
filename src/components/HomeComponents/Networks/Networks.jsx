@@ -6,9 +6,15 @@ import {
 } from "react-icons/fa";
 import "./Networks.scss";
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Networks = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
-    <div className="Networks">
+    <div className="Networks" data-aos="fade-up">
       <div className="Networks_text">
         <h3>Sardor Qodirovning ijtimoiy tarmoqlari:</h3>
       </div>

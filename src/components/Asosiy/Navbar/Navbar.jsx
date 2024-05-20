@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { FaBars } from "react-icons/fa6";
 import "./Navbar.scss"
@@ -29,9 +28,9 @@ const Navbar = () => {
             </ul>
             <button>Bog‘lanish</button>
         </div>
-        <div className="right-media">
+        <div onClick={() => openManu()} className="right-media">
             <div className="radio">
-            <FaBars onClick={() => openManu()} />
+            <FaBars  />
             </div>
         </div>
         <Navbar_Menu />

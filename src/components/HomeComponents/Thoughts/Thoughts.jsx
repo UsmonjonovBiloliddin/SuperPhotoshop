@@ -1,10 +1,15 @@
+import { useEffect } from "react";
 import { HomeThoughts_media } from "../../..";
 import "./Thoughts.scss";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Thoughts = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <>
-      <div className="Thoughts">
+      <div className="Thoughts" data-aos="fade-up">
         <div className="Thoughts_text">
           <h3>O‘quvchilar fikri</h3>
         </div>

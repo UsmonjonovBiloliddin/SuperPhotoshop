@@ -2,13 +2,19 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import "./Bonus.scss";
 import { useDispatch } from "react-redux";
 import { SignBackraund } from "../../../Slice/BackraundSlice";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Bonus = () => {
-  const dispatch = useDispatch()
-  const SignOpen = ()=> {
-  dispatch(SignBackraund())
-}
+  const dispatch = useDispatch();
+  const SignOpen = () => {
+    dispatch(SignBackraund());
+  };
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
-    <div className="Bonus">
+    <div className="Bonus " data-aos="fade-up">
       <div className="Bonus_top">
         <div className="Bonus_img">
           <img src="../images/Bonus_top.png" alt="" />
@@ -48,7 +54,9 @@ const Bonus = () => {
         </div>
       </div>
       <div className="btn">
-        <button onClick={ () => SignOpen()}><span>Ro’yhatdan o‘ting </span> <FaArrowRightLong /></button>
+        <button onClick={() => SignOpen()}>
+          <span>Ro’yhatdan o‘ting </span> <FaArrowRightLong />
+        </button>
       </div>
     </div>
   );

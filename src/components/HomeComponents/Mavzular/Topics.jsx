@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Topics.scss";
+import Aos from "aos";
+import 'aos/dist/aos.css'
 const Mavzular = () => {
+  useEffect(() =>{
+    Aos.init({duration:1500})
+  },[])
   return (
-    <div className="Topics">
+    <div className="Topics" data-aos="fade-up">
       <div className="Topics_top">
         <div className="Topics_img">
           <img src="../images/Mavzular.png" alt="" />

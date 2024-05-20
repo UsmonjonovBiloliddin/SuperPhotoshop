@@ -132,12 +132,12 @@
 @media screen and (0px <width <400px) {
     .SignUp{
         .SignUp_Sign{
-            width: 300px;
+            width: 280px;
             height: auto;
             padding: 20px 20px;
         }
         .SignUp_Contact{
-            width: 300px;
+            width: 280px;
             h3{
                 font-size: 14px;
             }
@@ -156,6 +156,10 @@
                     width: 100%;
                 }
             }
+        }
+        .Success{
+            width: 280px;
+            font-size: 15px;
         }
     }
 }

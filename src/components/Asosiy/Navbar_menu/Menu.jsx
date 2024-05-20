@@ -5,10 +5,14 @@ import { IoCloseSharp } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { NavManuBackround } from "../../../Slice/BackraundSlice";
+import { NavManuBackround, SignBackraund } from "../../../Slice/BackraundSlice";
 const Menu = ({  openBars}) => {
   const state = useSelector((state) => state.background)
   const dispatch = useDispatch()
+  
+  const SignOpen = ()=> {
+  dispatch(SignBackraund())
+}
     const closeManu = () => {
         dispatch(NavManuBackround())
     }
@@ -20,8 +24,8 @@ const Menu = ({  openBars}) => {
             <img src="../images/Logo.png" alt="" />
           </div>
           <h3>Super Photoshop</h3>
-          <div className="radio">
-            <IoCloseSharp onClick={() => closeManu()} />
+          <div className="radio" onClick={() => closeManu()}>
+            <IoCloseSharp  />
           </div>
         </div>
         <div className="categorys">
@@ -38,7 +42,7 @@ const Menu = ({  openBars}) => {
           <p>Narx</p><FaArrowRightLong />
           </div>
         </div>
-        <button>
+        <button onClick={() => SignOpen()}>
           Ro’yhatdan o‘tish <FaArrowRightLong />
         </button>
         <div className="contact">

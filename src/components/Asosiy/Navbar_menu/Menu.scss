@@ -35,6 +35,7 @@
         background-color: $main;
         color: $white;
         @include hover;
+        cursor: pointer;
       }
     }
     .categorys {
@@ -66,7 +67,7 @@
       border: none;
       border-radius: 50px;
       margin: 20px 0px;
-
+      cursor: pointer;
       @include hover
     }
     .contact {

@@ -1,7 +1,13 @@
 import "./Usage.scss"
+import Aos from "aos";
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 const Usage = () => {
+    useEffect(() =>{
+        Aos.init()
+      },[])
   return (
-    <div className="Usage">
+    <div className="Usage" data-aos="fade-up">
         <div className="Usage_text">
             <h2>Darslikdan foydalanish:</h2>
             <ul>
