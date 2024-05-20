@@ -1,165 +1,178 @@
-
-@use "../../Verible/Verible.scss"as * ;
-.SignUp{
-    position: fixed;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50% , -50%);
-    gap: 30px;
-    z-index: 2;
+@use "../../Verible/Verible.scss" as *;
+.SignUp {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  gap: 30px;
+  z-index: 2;
+  @include center;
+  transform: scale(0);
+  &.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    border-radius: 5px;
     @include center;
-    transform: scale(0);
-    &.active{
-        transform:translate(-50% , -50%) scale(1);
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+  .SignUp_Sign {
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    background-color: $white;
+    padding: 30px 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.179);
+    z-index: 999;
+    h3 {
+      font-size: 20px;
+      color: $text;
+      margin-bottom: 10px;
     }
-    .close{
-        width: 40px;
-        height: 40px;
-        position: absolute;
-        right: 40px;
-        top: 40px;
-        border-radius: 5px;
-        @include center;
-        background-color: rgb(0, 0, 0);
-        color: white;
+    p {
+      font-size: 13px;
+      color: $text-second;
+      font-weight: 700;
+      span {
+        color: black;
+      }
     }
-    .SignUp_Sign{
-        width: 400px;
-        height: 300px;
-        text-align: center;
-        background-color: $white;
-        padding: 30px 30px;
-        border-radius: 10px;
-        box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.179);
-        z-index: 999;
-        h3{
-            font-size: 20px;
-            color: $text;
-            margin-bottom: 10px ;
-        }
-        p{
-            font-size: 13px;
-            color: $text-second;
-            font-weight: 700;
-            span{
-                color: black;
-            }
-        }
-        input{
-            width: 100%;
-            padding: 10px 20px;
-            border-radius: 40px;
-            outline-color: $main;
-            border: none;
-            border: 1px solid #7E7E7E;
-            margin: 7px 0px;
-        }
-        button{
-            @include btnStyle;
-            padding: 15px ;
-            width: 100%;
-            @include center;
-            margin-top: 10px;
-            gap: 10px;
-            @include hover;
-            cursor: pointer;
-        }
+    input {
+      width: 100%;
+      padding: 10px 20px;
+      border-radius: 40px;
+      outline-color: $main;
+      border: none;
+      border: 1px solid #7e7e7e;
+      margin: 7px 0px;
     }
-    .SignUp_Contact{
-        width: 400px;
-        min-height: 100px;
-        text-align: center;
-        background-color: $white;
-        padding: 15px ;
-        border-radius: 10px;
-        box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.179);
+    button {
+      @include btnStyle;
+      padding: 15px;
+      width: 100%;
+      @include center;
+      margin-top: 10px;
+      gap: 10px;
+      @include hover;
+      cursor: pointer;
+    }
+  }
+  .SignUp_Contact {
+    width: 400px;
+    min-height: 100px;
+    text-align: center;
+    background-color: $white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.179);
 
-        h3{
-            font-size: 12px;
-        }
-        .buttons{
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 15px;
-            button{
-                @include btnStyle;
-                padding: 13px 25px;
-                gap: 10px;
-                cursor: pointer;
-                @include hover;
-            }
-            .green{
-                background-color: $green;
-                &:hover{
-                    background-color: #1CD790;
-                }
-                &:active{
-                    background-color: #2BC48A;
-                }
-            }
-        }
+    h3 {
+      font-size: 12px;
     }
-
-    .Success{
-        width: 320px;
-        height: 230px;background-color: $white;
-        border-radius: 30px;
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        gap: 15px;
-        color: $text;
-        box-shadow: 1px 1px 10px 1px rgb(0, 0, 0);
-        button{
-            padding: 13px ;
-            width: 100%;
-            cursor: pointer;
-            @include hover;
-            @include btnStyle;
-            @include center;
-
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 15px;
+      button {
+        @include btnStyle;
+        padding: 13px 25px;
+        gap: 10px;
+        cursor: pointer;
+        @include hover;
+      }
+      .green {
+        background-color: $green;
+        &:hover {
+          background-color: #1cd790;
         }
+        &:active {
+          background-color: #2bc48a;
+        }
+      }
     }
+  }
+
+  .Success {
+    width: 320px;
+    height: 230px;
+    background-color: $white;
+    border-radius: 30px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+    color: $text;
+    box-shadow: 1px 1px 10px 1px rgb(0, 0, 0);
+    button {
+      padding: 13px;
+      width: 100%;
+      cursor: pointer;
+      @include hover;
+      @include btnStyle;
+      @include center;
+    }
+  }
 }
 
 @media screen and (0px <width <400px) {
-    .SignUp{
-        .SignUp_Sign{
-            width: 280px;
-            height: auto;
-            padding: 20px 20px;
-        }
-        .SignUp_Contact{
-            width: 280px;
-            h3{
-                font-size: 14px;
-            }
-            .buttons{
-                flex-wrap: wrap;
-                width: 100%;
-                a{
-                    width: 100%;
-                }
-                button{
-                   width: 100%;
-                   justify-content: center;
-                   font-size: 16px;
-                }
-                .green{
-                    width: 100%;
-                }
-            }
-        }
-        .Success{
-            width: 280px;
-            font-size: 15px;
-        }
+  .SignUp {
+    .SignUp_Sign {
+      width: 270px;
+      height: auto;
+      padding: 20px 20px;
+      h3 {
+        font-size: 16px;
+      }
+      p {
+        font-size: 12px;
+      }
+      input {
+        padding: 7px 10px;
+      }
+      button {
+        padding: 9px 10px;
+      }
     }
+    .SignUp_Contact {
+      width: 270px;
+      h3 {
+        font-size: 13px;
+      }
+      .buttons {
+        flex-wrap: wrap;
+        width: 100%;
+        a {
+          width: 100%;
+        }
+        button {
+          width: 100%;
+          justify-content: center;
+          font-size: 14px;
+          padding: 10px 10px;
+          margin-top: -5px;
+        }
+        .green {
+          width: 100%;
+        }
+      }
+    }
+    .Success {
+      width: 280px;
+      font-size: 15px;
+    }
+  }
 }
