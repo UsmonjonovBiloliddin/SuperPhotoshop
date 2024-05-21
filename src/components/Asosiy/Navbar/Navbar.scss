@@ -30,13 +30,12 @@
     ul {
       display: flex;
       gap: 30px;
-      li {
-        a {
+      a {
+        li {
           color: $text;
-
-          &.active {
-            color: $main;
-          }
+        }
+        &.active {
+          color: $main;
         }
       }
     }
@@ -49,7 +48,7 @@
       cursor: pointer;
       @include hover;
     }
-    .mode{
+    .mode {
       font-size: 20px;
       cursor: pointer;
     }
@@ -77,7 +76,7 @@
     border-radius: 50px;
     margin: 0 auto;
     font-size: 13px;
-   
+
     .right {
       display: none;
     }

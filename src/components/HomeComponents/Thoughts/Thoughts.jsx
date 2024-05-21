@@ -3,13 +3,13 @@ import { HomeThoughts_media } from "../../..";
 import "./Thoughts.scss";
 import Aos from "aos";
 import "aos/dist/aos.css";
-const Thoughts = () => {
+const Thoughts = ({tref}) => {
   useEffect(() => {
     Aos.init();
   }, []);
   return (
-    <>
-      <div className="Thoughts" data-aos="fade-up">
+    <div ref={tref}>
+      <div  className="Thoughts" data-aos="fade-up">
         <div className="Thoughts_text">
           <h3>O‘quvchilar fikri</h3>
         </div>
@@ -98,7 +98,7 @@ const Thoughts = () => {
         </div>
       </div>
       
-    </>
+    </div>
   );
 };
 

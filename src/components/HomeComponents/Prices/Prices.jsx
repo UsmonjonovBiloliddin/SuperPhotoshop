@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react"
-const Prices = () => {
+const Prices = ({pref}) => {
     const dispatch = useDispatch()
     const SignOpen = ()=> {
     dispatch(SignBackraund())
@@ -15,7 +15,7 @@ const Prices = () => {
     Aos.init();
   }, []);
   return (
-    <div className='Prices' data-aos="fade-up">
+    <div ref={pref} className='Prices' data-aos="fade-up">
         <div className="Prices_img">
             <img src="../images/Headerimg.png" alt="" />
         </div>

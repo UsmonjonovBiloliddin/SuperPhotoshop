@@ -11,7 +11,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 const Networks = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init();
   }, []);
   return (
     <div className="Networks" data-aos="fade-up">

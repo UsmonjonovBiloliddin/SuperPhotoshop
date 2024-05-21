@@ -2,12 +2,13 @@ import React, { useEffect } from "react";
 import "./Topics.scss";
 import Aos from "aos";
 import 'aos/dist/aos.css'
-const Mavzular = () => {
+const Mavzular = ({mref}) => {
   useEffect(() =>{
-    Aos.init({duration:1500})
+    Aos.init({duration:1000})
   },[])
   return (
-    <div className="Topics" data-aos="fade-up">
+    <div ref={mref}>
+      <div className="Topics" data-aos="fade-up">
       <div className="Topics_top">
         <div className="Topics_img">
           <img src="../images/Mavzular.png" alt="" />
@@ -90,6 +91,7 @@ const Mavzular = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
